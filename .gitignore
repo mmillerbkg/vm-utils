@@ -1,0 +1,8 @@
+nodes.txt
+*.log
+log/
+logs/
+
+secrets
+shared
+exports
