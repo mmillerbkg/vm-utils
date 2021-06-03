@@ -11,7 +11,11 @@ echo "Installing profiles"
 # Change directory to this directory
 cd "${0%/*}"
 
-cp ./.zshrc ~/.zshrc
+# Copy aliases
+
+cp ../.alias.d ~/
+
+cp ../misc/.zshrc ~/.zshrc
 
 # Install Powerlevel10k
 echo 'Installing Powerlevel10k with modified defaults!'
