@@ -13,7 +13,7 @@ cd "${0%/*}"
 
 # Copy aliases
 
-cp ../.alias.d ~/
+cp -r ../.alias.d ~/
 
 cp ../misc/.zshrc ~/.zshrc
 
@@ -21,7 +21,7 @@ cp ../misc/.zshrc ~/.zshrc
 echo 'Installing Powerlevel10k with modified defaults!'
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/powerlevel10k
 
-cp ./.p10k.zsh ~/.p10k.zsh
+cp ../misc/.p10k.zsh ~/.p10k.zsh
 
 echo "Good luck, have fun!"
 
