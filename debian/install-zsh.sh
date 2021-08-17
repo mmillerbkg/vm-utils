@@ -19,7 +19,19 @@ cp ../misc/.zshrc ~/.zshrc
 
 # Install Powerlevel10k
 echo 'Installing Powerlevel10k with modified defaults!'
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/powerlevel10k
+
+if [[ -d "$HOME/powerlevel10k" ]]; then
+
+    echo "Powerlevel10k already installed. Will pull most recent changes"
+    cd $HOME/powerlevel10k
+
+    git pull
+
+    else
+
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/powerlevel10k
+
+fi
 
 cp ../misc/.p10k.zsh ~/.p10k.zsh
 
