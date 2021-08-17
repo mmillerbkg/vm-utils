@@ -2,9 +2,7 @@
 
 apt update && apt upgrade -y
 
-apt install -y wget apt-transport-https ca-certificates
-
-apt install -y ufw
+apt install -y wget apt-transport-https ca-certificates gnupg2 ufw git 
 
 echo "UFW installed, remember to add rules!"
 
@@ -26,7 +24,7 @@ timedatectl set-timezone US/Central
 
 # Update hostname
 if [ -z "$1" ]; then
-    echo "Hostname was not set, remember to set"
+    echo "Hostname was not set, remember to set using hostnamectl!!"
     else
         hostnamectl set-hostname "$1"
 fi
