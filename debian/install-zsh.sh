@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [[ -e "/bin/zsh" ]]; then
     echo "ZSH already installed!"
