@@ -23,17 +23,17 @@ apt install -y apt-listchanges unattended-upgrades
 timedatectl set-timezone US/Central
 
 # Update hostname
-if [ -z "$1" ]; then
-    echo "Hostname was not set, remember to set using hostnamectl!!"
-    else
-        hostnamectl set-hostname "$1"
-fi
+#if [ -z "$1" ]; then
+#    echo "Hostname was not set, remember to set using hostnamectl!!"
+#    else
+#        hostnamectl set-hostname "$1"
+#fi
 
 # Install doas
 # Change to root dir
 cd ~
 ## Install build tools
-apt install -y make gcc tar bison
+apt install -y make cmake gcc g++ flex tar bison
 git clone https://salsa.debian.org/debian/doas.git
 
 cd ~/doas
