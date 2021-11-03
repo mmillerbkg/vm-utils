@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [[ -f "/bin/zsh" ]]; then
+if [[ -e "/bin/zsh" ]]; then
     echo "ZSH already installed!"
     else
     apt install -y zsh
