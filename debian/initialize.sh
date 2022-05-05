@@ -32,7 +32,7 @@ timedatectl set-timezone US/Central
 # Change to root dir
 cd ~
 ## Install build tools
-apt install -y make cmake gcc flex tar bison
+apt install -y make cmake gcc g++ flex tar bison
 git clone https://salsa.debian.org/debian/doas.git
 
 cd ~/doas
