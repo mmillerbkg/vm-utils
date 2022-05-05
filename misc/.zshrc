@@ -22,7 +22,7 @@ compinit
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
-for file in ~/.alias.d/*;
+for file in ~/.alias.d/*.zsh;
     do
         source $file
     done
