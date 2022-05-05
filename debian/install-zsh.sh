@@ -13,7 +13,7 @@ cd "${0%/*}"
 
 # Copy aliases
 
-cp -r ../.alias.d ~/
+git clone https://gitlab.com/millerthyme/alias.d $HOME/.alias.d
 
 cp ../misc/.zshrc ~/.zshrc
 
@@ -22,7 +22,7 @@ echo 'Installing Powerlevel10k with modified defaults!'
 
 if [[ -d "$HOME/powerlevel10k" ]]; then
 
-    echo "Powerlevel10k already installed. Will pull most recent changes"
+    echo "Powerlevel10k already installed. Pulling most recent changes"
     cd $HOME/powerlevel10k
 
     git pull
